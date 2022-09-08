@@ -18,11 +18,11 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link rel="stylesheet" href="./css/styles.css" />
 		<link rel="stylesheet" href="./css/main.min.css" />
+		<link rel="stylesheet" href="./css/main.css">
 	</head>
 	<body>
-		<!-- <header class="header">
+		<header class="header">
 			<div class="container header__container">
 				<a href="./" class="logo link"><span class="logo-web">Web</span>Studio</a>
 				<nav class="navigation">
@@ -54,8 +54,50 @@
 						</a>
 					</li>
 				</ul>
+				<button type="button" class="menu-open-btn" data-menu-open>
+					<svg class="header-mob" width="40" height="40">
+						<use href="./images/icons.svg#icon-header-risca"></use>
+					</svg>
+				</button>
 			</div>
-		</header> -->
+			<div class="mob-menu is-hidden" data-menu>
+				<div class="container">
+					<button class="menu-close-btn"  data-menu-close>
+						<svg class="header-mob" width="40" height="40">
+								<use href="./images/icons.svg#icon-header-close"></use>
+						</svg>
+					</button>
+					<nav class="mob-menu-navigation">
+					<ul class="mob-menu-list list">
+						<li class="mob-menu-item">
+							<a href="./index.html" class="mob-menu-link link"> Студія</a>
+						</li>
+						<li class="navigation__item">
+							<a href="" class="mob-menu-link link mob-menu-current curren"> Портфоліо</a>
+						</li>
+						<li class="mob-menu-item"><a href="" class="mob-menu-link link"> Контакти</a></li>
+					</ul>
+				</nav>
+					<ul class="mob-connect list">
+						<li class="mob-connect-item link">
+							<a href="tel:+380961111111" class="mob-connect-tel link"> +38 096 111 11 11 </a>
+						</li>
+						<li class="mob-connect-item">
+							<a href="mailto:info@devstudio.com" class="mob-connect-mail link">
+								info@devstudio.com
+							</a>
+						</li>
+					</ul>
+					<ul class="mob-soc-hid list">
+						<li class="mob-soc-item">
+							<a href="" class="mob-soc-link link">Instagram</a>
+						</li>
+						<li class="mob-soc-item"><a href="" class="mob-soc-link link">Twitter</a></li>
+						<li class="mob-soc-item"><a href="" class="mob-soc-link link">Facebook</a></li>
+						<li class="mob-soc-item"><a href="" class="mob-soc-link link">LinkedIn</a></li>
+					</ul>
+				</div>
+		</header>
 		<main>
 			<section class="section">
 				<div class="container">
@@ -82,7 +124,21 @@
 							<a href="" class="work-link-asd link">
 								<article class="work-card">
 									<div class="work-link">
-										<img src="./images/project1.jpg" alt="project1" width="370" height="294" />
+										<picture>
+											<source
+												srcset="./images/project-1-des.jpg 1x, ./images/project-1-des-2x.jpg 2x"
+												media="(min-width:1200px)"
+											/>
+											<source
+												srcset="./images/project-1-tab.jpg 1x, ./images/project-1-tab-2x.jpg 2x"
+												media="(min-width:768px)"
+											/>
+											<source
+												srcset="./images/project-1-mob.jpg 1x, ./images/project-1-mob-2x.jpg 2x"
+												media="(max-width:767px)"
+											/>
+											<img src="./images/project-1-mob.jpg" alt="project1" width="450" height="294" />
+										</picture>
 										<p class="work-top-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -100,7 +156,21 @@
 							<a href="" class="work-link-asd link">
 								<article class="work-card">
 									<div class="work-link">
-										<img src="./images/project2.jpg" alt="project2" width="370" height="294" />
+										<picture>
+											<source
+												srcset="./images/project-2-des.jpg 1x, ./images/project-2-des-2x.jpg 2x"
+												media="(min-width:1200px)"
+											/>
+											<source
+												srcset="./images/project-2-tab.jpg 1x, ./images/project-2-tab-2x.jpg 2x"
+												media="(min-width:768px)"
+											/>
+											<source
+												srcset="./images/project-2-mob.jpg 1x, ./images/project-2-mob-2x.jpg 2x"
+												media="(max-width:767px)"
+											/>
+											<img src="./images/project-2-mob.jpg" alt="project1" width="450" height="294" />
+										</picture>
 										<p class="work-top-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -117,126 +187,224 @@
 						<li class="work-list">
 							<a href="" class="work-link-asd link">
 								<article class="work-card">
-								<div class="work-link">
-									<img src="./images/project3.jpg" alt="project3" width="370" height="294" />
-									<p class="work-top-text">
-										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-										Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-										приватну особу.
-									</p>
-								</div>
-								<div class="work-data">
-									<h2 class="work-title">Технокряк</h2>
-									<p class="work-pre-title">Веб-сайт</p>
-								</div>
+									<div class="work-link">
+										<picture>
+											<source
+												srcset="./images/project-3-des.jpg 1x, ./images/project-3-des-2x.jpg 2x"
+												media="(min-width:1200px)"
+											/>
+											<source
+												srcset="./images/project-3-tab.jpg 1x, ./images/project-3-tab-2x.jpg 2x"
+												media="(min-width:768px)"
+											/>
+											<source
+												srcset="./images/project-3-mob.jpg 1x, ./images/project-3-mob-2x.jpg 2x"
+												media="(max-width:767px)"
+											/>
+											<img src="./images/project-3-mob.jpg" alt="project1" width="450" height="294" />
+										</picture>
+										<p class="work-top-text">
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+											приватну особу.
+										</p>
+									</div>
+									<div class="work-data">
+										<h2 class="work-title">Технокряк</h2>
+										<p class="work-pre-title">Веб-сайт</p>
+									</div>
 								</article>
 							</a>
 						</li>
 						<li class="work-list">
 							<a href="" class="work-link-asd link">
 								<article class="work-card">
-								<div class="work-link">
-									<img src="./images/project4.jpg" alt="project4" width="370" height="294" />
-									<p class="work-top-text">
-										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-										Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-										приватну особу.
-									</p>
-								</div>
-								<div class="work-data">
-									<h2 class="work-title">Проєкт Prime</h2>
-									<p class="work-pre-title">Маркетинг</p>
-								</div>
+									<div class="work-link">
+										<picture>
+											<source
+												srcset="./images/project-4-des.jpg 1x, ./images/project-4-des-2x.jpg 2x"
+												media="(min-width:1200px)"
+											/>
+											<source
+												srcset="./images/project-4-tab.jpg 1x, ./images/project-4-tab-2x.jpg 2x"
+												media="(min-width:768px)"
+											/>
+											<source
+												srcset="./images/project-4-mob.jpg 1x, ./images/project-4-mob-2x.jpg 2x"
+												media="(max-width:767px)"
+											/>
+											<img src="./images/project-4-mob.jpg" alt="project1" width="450" height="294" />
+										</picture>
+										<p class="work-top-text">
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+											приватну особу.
+										</p>
+									</div>
+									<div class="work-data">
+										<h2 class="work-title">Проєкт Prime</h2>
+										<p class="work-pre-title">Маркетинг</p>
+									</div>
 								</article>
 							</a>
 						</li>
 						<li class="work-list">
 							<a href="" class="work-link-asd link">
 								<article class="work-card">
-								<div class="work-link">
-									<img src="./images/project5.jpg" alt="project5" width="370" height="294" />
-									<p class="work-top-text">
-										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-										Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-										приватну особу.
-									</p>
-								</div>
-								<div class="work-data">
-									<h2 class="work-title">Проєкт Boxes</h2>
-									<p class="work-pre-title">Додаток</p>
-								</div>
+									<div class="work-link">
+										<picture>
+											<source
+												srcset="./images/project-5-des.jpg 1x, ./images/project-5-des-2x.jpg 2x"
+												media="(min-width:1200px)"
+											/>
+											<source
+												srcset="./images/project-5-tab.jpg 1x, ./images/project-5-tab-2x.jpg 2x"
+												media="(min-width:768px)"
+											/>
+											<source
+												srcset="./images/project-5-mob.jpg 1x, ./images/project-5-mob-2x.jpg 2x"
+												media="(max-width:767px)"
+											/>
+											<img src="./images/project-5-mob.jpg" alt="project1" width="450" height="294" />
+										</picture>
+										<p class="work-top-text">
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+											приватну особу.
+										</p>
+									</div>
+									<div class="work-data">
+										<h2 class="work-title">Проєкт Boxes</h2>
+										<p class="work-pre-title">Додаток</p>
+									</div>
 								</article>
 							</a>
 						</li>
 						<li class="work-list">
 							<a href="" class="work-link-asd link">
 								<article class="work-card">
-								<div class="work-link">
-									<img src="./images/project6.jpg" alt="project6" width="370" height="294" />
-									<p class="work-top-text">
-										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-										Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-										приватну особу.
-									</p>
-								</div>
-								<div class="work-data">
-									<h2 class="work-title">Inspiration has no Borders</h2>
-									<p class="work-pre-title">Веб-сайт</p>
-								</div>
+									<div class="work-link">
+										<picture>
+											<source
+												srcset="./images/project-6-des.jpg 1x, ./images/project-6-des-2x.jpg 2x"
+												media="(min-width:1200px)"
+											/>
+											<source
+												srcset="./images/project-6-tab.jpg 1x, ./images/project-6-tab-2x.jpg 2x"
+												media="(min-width:768px)"
+											/>
+											<source
+												srcset="./images/project-6-mob.jpg 1x, ./images/project-6-mob-2x.jpg 2x"
+												media="(max-width:767px)"
+											/>
+											<img src="./images/project-6-mob.jpg" alt="project1" width="450" height="294" />
+										</picture>
+										<p class="work-top-text">
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+											приватну особу.
+										</p>
+									</div>
+									<div class="work-data">
+										<h2 class="work-title">Inspiration has no Borders</h2>
+										<p class="work-pre-title">Веб-сайт</p>
+									</div>
 								</article>
 							</a>
 						</li>
 						<li class="work-list">
 							<a href="" class="work-link-asd link">
 								<article class="work-card">
-								<div class="work-link">
-									<img src="./images/project7.jpg" alt="project7" width="370" height="294" />
-									<p class="work-top-text">
-										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-										Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-										приватну особу.
-									</p>
-								</div>
-								<div class="work-data">
-									<h2 class="work-title">Видання Limited Edition</h2>
-									<p class="work-pre-title">Дизайн</p>
-								</div>
+									<div class="work-link">
+										<picture>
+											<source
+												srcset="./images/project-7-des.jpg 1x, ./images/project-7-des-2x.jpg 2x"
+												media="(min-width:1200px)"
+											/>
+											<source
+												srcset="./images/project-7-tab.jpg 1x, ./images/project-7-tab-2x.jpg 2x"
+												media="(min-width:768px)"
+											/>
+											<source
+												srcset="./images/project-7-mob.jpg 1x, ./images/project-7-mob-2x.jpg 2x"
+												media="(max-width:767px)"
+											/>
+											<img src="./images/project-7-mob.jpg" alt="project1" width="450" height="294" />
+										</picture>
+										<p class="work-top-text">
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+											приватну особу.
+										</p>
+									</div>
+									<div class="work-data">
+										<h2 class="work-title">Видання Limited Edition</h2>
+										<p class="work-pre-title">Дизайн</p>
+									</div>
 								</article>
 							</a>
 						</li>
 						<li class="work-list">
 							<a href="" class="work-link-asd link">
 								<article class="work-card">
-								<div class="work-link">
-									<img src="./images/project8.jpg" alt="project8" width="370" height="294" />
-									<p class="work-top-text">
-										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-										Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-										приватну особу.
-									</p>
-								</div>
-								<div class="work-data">
-									<h2 class="work-title">Проєкт LAB</h2>
-									<p class="work-pre-title">Маркетинг</p>
-								</div>
+									<div class="work-link">
+										<picture>
+											<source
+												srcset="./images/project-8-des.jpg 1x, ./images/project-8-des-2x.jpg 2x"
+												media="(min-width:1200px)"
+											/>
+											<source
+												srcset="./images/project-8-tab.jpg 1x, ./images/project-8-tab-2x.jpg 2x"
+												media="(min-width:768px)"
+											/>
+											<source
+												srcset="./images/project-8-mob.jpg 1x, ./images/project-8-mob-2x.jpg 2x"
+												media="(max-width:767px)"
+											/>
+											<img src="./images/project-8-mob.jpg" alt="project1" width="450" height="294" />
+										</picture>
+										<p class="work-top-text">
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+											приватну особу.
+										</p>
+									</div>
+									<div class="work-data">
+										<h2 class="work-title">Проєкт LAB</h2>
+										<p class="work-pre-title">Маркетинг</p>
+									</div>
 								</article>
 							</a>
 						</li>
 						<li class="work-list">
 							<a href="" class="work-link-asd link">
 								<article class="work-card">
-								<div class="work-link">
-									<img src="./images/project9.jpg" alt="project9" width="370" height="294" />
-									<p class="work-top-text">
-										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-										Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-										приватну особу.
-									</p>
-								</div>
-								<div class="work-data">
-									<h2 class="work-title">Growing Business</h2>
-									<p class="work-pre-title">Додаток</p>
-								</div>
+									<div class="work-link">
+										<picture>
+											<source
+												srcset="./images/project-9-des.jpg 1x, ./images/project-9-des-2x.jpg 2x"
+												media="(min-width:1200px)"
+											/>
+											<source
+												srcset="./images/project-9-tab.jpg 1x, ./images/project-9-tab-2x.jpg 2x"
+												media="(min-width:768px)"
+											/>
+											<source
+												srcset="./images/project-9-mob.jpg 1x, ./images/project-9-mob-2x.jpg 2x"
+												media="(max-width:767px)"
+											/>
+											<img src="./images/project-9-mob.jpg" alt="project1" width="450" height="294" />
+										</picture>
+										<p class="work-top-text">
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+											Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+											приватну особу.
+										</p>
+									</div>
+									<div class="work-data">
+										<h2 class="work-title">Growing Business</h2>
+										<p class="work-pre-title">Додаток</p>
+									</div>
 								</article>
 							</a>
 						</li>
@@ -246,61 +414,63 @@
 		</main>
 		<footer class="contacts">
 			<div class="container footer__container">
-				<div class="flecsy">
-					<a href="./" class="logo-contacts link"><span class="logo-web">Web</span>Studio</a>
-					<address class="info">
-						<ul class="info-list list">
-							<li class="info-item">
-								<a
-									class="info-address link"
-									href="https://goo.gl/maps/SW1nA3isdETWnzQe9"
-									target="_blank"
-									rel="noopener nereferrer nofollow"
-								>
-									м. Київ, пр-т Лесі Українки, 26
+				<div class="container-tablet">
+					<div class="flecsy">
+						<a href="./" class="logo-contacts link"><span class="logo-web">Web</span>Studio</a>
+						<address class="info">
+							<ul class="info-list list">
+								<li class="info-item">
+									<a
+										class="info-address link"
+										href="https://goo.gl/maps/SW1nA3isdETWnzQe9"
+										target="_blank"
+										rel="noopener nereferrer nofollow"
+									>
+										м. Київ, пр-т Лесі Українки, 26
+									</a>
+								</li>
+								<li class="info-item">
+									<a href="mailto:info@example.com" class="info-mail link">info@example.com</a>
+								</li>
+								<li class="info-item">
+									<a href="tel:+380991111111" class="info-tel link">+38 099 111 11 11</a>
+								</li>
+							</ul>
+						</address>
+					</div>
+					<div class="footer-continer">
+						<p class="footer-title">приєднуйтесь</p>
+						<ul class="footer-soc list">
+							<li class="footer-soc-item">
+								<a href="" class="footer-soc-link link">
+									<svg class="footer-soc-icon" width="20" height="20">
+										<use href="./images/icons.svg#icon-instagram"></use>
+									</svg>
 								</a>
 							</li>
-							<li class="info-item">
-								<a href="mailto:info@example.com" class="info-mail link">info@example.com</a>
+							<li class="footer-soc-item">
+								<a href="" class="footer-soc-link link">
+									<svg class="footer-soc-icon" width="20" height="20">
+										<use href="./images/icons.svg#icon-twitter	"></use>
+									</svg>
+								</a>
 							</li>
-							<li class="info-item">
-								<a href="tel:+380991111111" class="info-tel link">+38 099 111 11 11</a>
+							<li class="footer-soc-item">
+								<a href="" class="footer-soc-link link"
+									><svg class="footer-soc-icon" width="20" height="20">
+										<use href="./images/icons.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer-soc-item">
+								<a href="" class="footer-soc-link link"
+									><svg class="footer-soc-icon" width="20" height="20">
+										<use href="./images/icons.svg#icon-linkedin"></use>
+									</svg>
+								</a>
 							</li>
 						</ul>
-					</address>
-				</div>
-				<div class="footer-continer">
-					<p class="footer-title">приєднуйтесь</p>
-					<ul class="footer-soc list">
-						<li class="footer-soc-item">
-							<a href="" class="footer-soc-link link">
-								<svg class="footer-soc-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="footer-soc-item">
-							<a href="" class="footer-soc-link link">
-								<svg class="footer-soc-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-twitter	"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="footer-soc-item">
-							<a href="" class="footer-soc-link link"
-								><svg class="footer-soc-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="footer-soc-item">
-							<a href="" class="footer-soc-link link"
-								><svg class="footer-soc-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
+					</div>
 				</div>
 				<div class="footer-letter">
 					<p class="text-soc-it">Підпишіться на розсилку</p>
@@ -320,5 +490,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>

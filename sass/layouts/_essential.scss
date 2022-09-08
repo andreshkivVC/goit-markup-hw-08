@@ -1,9 +1,10 @@
 .essential {
     background-color: #c4c4c4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/header-mob-2x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/header-mob.jpg);
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../images/header-mob-2x.webp);
+        
 
     @include retina {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -23,9 +24,10 @@
 
     @include tablet {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/header-tablet-2x.webp);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/header-tablet.jpg);
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../images/header-tablet-2x.webp);
+            
 
         @include retina {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -37,10 +39,10 @@
 
     @include desktop {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/hero);
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../images/hero-2x.webp);
-
+                url(../images/hero-2x.webp);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero.jpg);
+            
         @include retina {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../images/hero-2x.jpg);
