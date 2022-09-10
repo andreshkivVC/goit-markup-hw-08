@@ -1,15 +1,12 @@
 .filter {
     display: flex;
     flex-wrap: wrap;
+    gap: 15px 8px;
 
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
     }
-}
-
-.filter-item:not(:last-child) {
-    margin-right: 8px;
 }
 
 .work-card {
@@ -19,7 +16,6 @@
 }
 
 .filter-btn {
-    margin-bottom: 15px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.65;
@@ -55,7 +51,6 @@
     }
 }
 
-
 .work-link {
     position: relative;
     overflow: hidden;
@@ -88,21 +83,20 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 25px;
+    margin-top: 40px;
 
     @media screen and (min-width: 768px) {
-        margin-top: 14px;
+        margin-top: 30px;
     }
 
     @media screen and (min-width: 1200px) {
-        margin-top: 34px;
+        margin-top: 50px;
     }
 }
 
 .work-item.work-list:nth-last-child(-n+3) {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .work-title {
     font-weight: 700;
@@ -131,13 +125,8 @@
 
 .info {
     margin-top: 20px;
-    // margin-right: 70px;
 }
 
-// .logo-contacts {
-//     display: inline;
-//     margin-top: 40px;
-// }
 
 .info-list .info-item:not(:last-child) {
     margin-bottom: 9px;

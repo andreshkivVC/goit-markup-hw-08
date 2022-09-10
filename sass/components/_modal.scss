@@ -1,4 +1,6 @@
 .backdrop {
+    padding-left: 15px;
+    padding-right: 15px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -16,7 +18,8 @@
 }
 
 .modal {
-    position: absolute;
+    position: relative;
+    max-height: 100vh;
     width: 528px;
     height: 581px;
     background: #ffffff;
@@ -26,7 +29,7 @@
     top: 50%;
     left: 50%;
     padding: 40px;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -30%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (max-width: 1199px) {
         width: 450px;
@@ -173,15 +176,13 @@
             margin-right: 8px;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-//                 @media screen and (max-width: 1199px) {
-//                 font-weight: 400;
-//                     font-size: 12px;
-//                     line-height: 1.66;
-                   
-//                 }
-// }
+                @media screen and (max-width: 1199px) {
+                    font-size: 12px;
+                    line-height: 1.16;
+                }
+}
 
-.check-polyci {
+.check-polyci { 
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -191,9 +192,9 @@
 
 .input-check:checked+.form-polyci::before {
     background-color: #2196f3;
-    border-radius: 2px;
-    background-image: url(../images/galochka.svg);
-    border: none;
-    background-repeat: no-repeat;
-    background-position: center;
+        border-radius: 2px;
+        background-image: url(../images/galochka.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
 }
